@@ -54,7 +54,7 @@
 	},
 	"browser_specific_settings": {
 		"gecko": {
-			"id": "@news-feed-eradicator"
+			"id": "@news-feed-eradicator-strict"
 		}
 	}
 }

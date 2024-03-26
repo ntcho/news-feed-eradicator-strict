@@ -32,18 +32,18 @@ const About = () => {
 			h(
 				'p',
 				'News Feed Eradicator was born in 2012 in a bout of procrastination. I first noticed that ' +
-					"I wasn't in control of my own mind when I found myself typing " +
-					'"facebook.com" into the address bar unconsciously. '
+				"I wasn't in control of my own mind when I found myself typing " +
+				'"facebook.com" into the address bar unconsciously. '
 			),
 			h(
 				'p',
 				'Though I was forced to use Facebook for my studies, I realised I just had to find a way to reduce its addictive power over me. ' +
-					'The number one thing that felt so addictive about it was the news feed.'
+				'The number one thing that felt so addictive about it was the news feed.'
 			),
 			h(
 				'p',
 				"In recent years, we've seen the news feed proliferate across all sort of apps thanks to " +
-					"its addictive power over users. I think it's long overdue that we as users take that power back."
+				"its addictive power over users. I think it's long overdue that we as users take that power back."
 			),
 			h('p', [
 				'News Feed Eradicator is and always will be free and ',
@@ -51,7 +51,7 @@ const About = () => {
 					'a.underline-hover',
 					{
 						props: {
-							href: 'https://github.com/jordwest/news-feed-eradicator/',
+							href: 'https://github.com/ntcho/news-feed-eradicator-strict/',
 						},
 					},
 					'open-source'
@@ -96,7 +96,7 @@ const About = () => {
 						'a.underline-hover',
 						{
 							props: {
-								href: 'https://github.com/jordwest/news-feed-eradicator/',
+								href: 'https://github.com/ntcho/news-feed-eradicator-strict/',
 							},
 						},
 						'GitHub'
@@ -115,7 +115,7 @@ const About = () => {
 					h(
 						'a.underline-hover',
 						{ props: { href: 'https://gumroad.com/l/news-feed-eradicator' } },
-						'Buy me a coffee'
+						'Buy the original author a coffee'
 					)
 				),
 			]),
@@ -147,10 +147,10 @@ const InfoPanel = (store: Store) => {
 		state.uiOptions.tab === id
 			? h('a.strong.text-larger-1', { props: { href: 'javascript:;' } }, label)
 			: h(
-					'a.underline-hover.text-larger-1',
-					{ props: { href: 'javascript:;' }, on: { click: visitTab(id) } },
-					label
-			  );
+				'a.underline-hover.text-larger-1',
+				{ props: { href: 'javascript:;' }, on: { click: visitTab(id) } },
+				label
+			);
 
 	return h('div.nfe-info-panel', [
 		h('div.nfe-info-col.v-stack-4', [

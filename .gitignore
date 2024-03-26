@@ -9,7 +9,7 @@ dump.rdb
 
 node_modules
 
-browsers/firefox/news-feed-eradicator.xpi
+browsers/firefox/news-feed-eradicator-strict.xpi
 
 dist
 build
