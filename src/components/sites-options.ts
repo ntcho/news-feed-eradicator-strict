@@ -34,12 +34,14 @@ const DisableConfirmation = (store: Store, siteId: SiteId) => {
 
 	return h('div.bg-active-light.pad-1.h-stack', [
 		h('strong', `Show feed for`),
+		button('1 min', { t: 'temporarily', milliseconds: 1 * MINUTE }),
+		button('2 min', { t: 'temporarily', milliseconds: 2 * MINUTE }),
 		button('5 min', { t: 'temporarily', milliseconds: 5 * MINUTE }),
-		button('10 min', { t: 'temporarily', milliseconds: 10 * MINUTE }),
-		button('30 min', { t: 'temporarily', milliseconds: 30 * MINUTE }),
-		button('1 hr', { t: 'temporarily', milliseconds: HOUR }),
-		button('1 day', { t: 'temporarily', milliseconds: DAY }),
-		button('forever', { t: 'forever' }),
+		// button('10 min', { t: 'temporarily', milliseconds: 10 * MINUTE }),
+		// button('30 min', { t: 'temporarily', milliseconds: 30 * MINUTE }),
+		// button('1 hr', { t: 'temporarily', milliseconds: HOUR }),
+		// button('1 day', { t: 'temporarily', milliseconds: DAY }),
+		// button('forever', { t: 'forever' }),
 	]);
 };
 
