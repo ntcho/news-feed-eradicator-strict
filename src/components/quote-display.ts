@@ -31,7 +31,7 @@ const QuoteMenu = (store: Store) => {
 		h('ul.margin-0.pad-0.list-unstyled', [
 			MenuItem(store, removeCurrentQuote(), 'Remove this quote'),
 			MenuItem(store, selectNewQuote(), 'See another quote'),
-			MenuItem(store, showOptions(), 'Settings...'),
+			// MenuItem(store, showOptions(), 'Settings...'),
 		]),
 	]);
 };
